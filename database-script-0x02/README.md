@@ -6,8 +6,7 @@ The script leverages PostgreSQL’s built-in `(UUID())` function to automaticall
 
 This dataset allows developers to quickly test features like queries, joins, constraints, and application logic without manually entering data. The seed values are intentionally lightweight and easy to modify, making it ideal for iterative testing and demos.
 
-<-
+<!--
 **Usage:**
-```bash
-psql -U <username> -d <database_name> -f seed.sql
+```bash psql -U <username> -d <database_name> -f seed.sql
 ->
