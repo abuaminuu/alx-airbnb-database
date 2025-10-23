@@ -10,7 +10,7 @@ This repository includes SQL scripts for:
 - Creating Entity Relation Model Diagram, and Database Requirements in (`ERD/`)
 - Creating all database tables and indexes (`database-script-0x01/schema.sql`)
 - Populating the database with sample data for testing (`database-script-0x02/seed.sql`)
-- Demonstrating normalization steps and principles (`normalization/` directory)
+- Demonstrating normalization steps and principles (`normalization.md` directory)
 
 Together, these components provide a solid foundation for developers to build and test booking systems, analytics dashboards, or full-stack web applications.  
 
