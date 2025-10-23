@@ -1,5 +1,5 @@
 
-#1 Entities and Attributes for the Database
+# 1 Entities and Attributes for the Database
 
 ## User Table
 -  user_id: Primary Key, UUID, Indexed
@@ -53,7 +53,7 @@
 - message_body: TEXT, NOT NULL
 - sent_at: TIMESTAMP, DEFAULT CURRENT_TIMESTAMP
 
-#2 Constraints Applied to The Tables
+# 2 Constraints Applied to The Tables
 ## User Table
 -  Unique constraint on email.
 -  Non- null constraints on required fields.
@@ -71,7 +71,7 @@
 Message Table
 - Foreign key constraints on sender_id and recipient_id.
 
-#3 Indexing
+# 3 Indexing
 -  Primary Keys: Indexed automatically.
 Additional Indexes:
 - email in the User table.
