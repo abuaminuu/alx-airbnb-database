@@ -1,4 +1,4 @@
-# SQL JOIN Queries README
+# JOINing Queries
 
 This collection demonstrates fundamental SQL JOIN operations using a property booking database schema. The queries showcase different JOIN types for retrieving related data across multiple tables.
 
