@@ -22,14 +22,14 @@ Seq Scan on user  (cost=0.00..1250.50 rows=1 width=180)
 Execution Time: 8.5 ms
 ```
 
-**AFTER `idx_user_email` Index:**
+**AFTER `idx_user_email` Index created:**
 ```
 Index Scan using idx_user_email on user  (cost=0.29..8.31 rows=1 width=180)
   Index Cond: (email = 'user123@example.com'::text)
 Execution Time: 0.1 ms
 ```
 
-**Improvement: 85x faster**
+**Improvement: 84x faster**
 
 ---
 
