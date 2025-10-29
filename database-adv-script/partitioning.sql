@@ -15,7 +15,7 @@ CREATE TABLE booking_partitioned (
 ) PARTITION BY RANGE (start_date);
 
 -- Step 2: Create partitions for different time periods
-
+-- Refactor the query to reduce execution time, such as reducing unnecessary joins or using indexing.
 -- Historical data partition (before 2023)
 CREATE TABLE booking_historical PARTITION OF booking_partitioned
     FOR VALUES FROM ('2000-01-01') TO ('2023-01-01');
