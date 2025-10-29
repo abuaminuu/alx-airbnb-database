@@ -1,7 +1,7 @@
 # Query Performance Analysis: Booking Details Query
 
 ## 🔍 EXPLAIN ANALYZE Output Analysis
-
+### Analyze the query’s performance using EXPLAIN and identify any inefficiencies.
 ```sql
 EXPLAIN ANALYZE
 SELECT 
@@ -71,7 +71,7 @@ ORDER BY b.created_at DESC;
 
 4. **Inefficient Join Order**
    - Large tables joined before filtering
-
+## Refactor the query to reduce execution time, such as reducing unnecessary joins or using indexing.
 ## 💡 Optimization Recommendations (Refactoring)
 
 ### **Immediate Index Additions:**
