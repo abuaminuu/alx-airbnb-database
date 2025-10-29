@@ -1,3 +1,4 @@
+-- Write an initial query that retrieves all bookings along with the user details, property details, and payment details.
 -- Assume the Booking table is large and query performance is slow. Implement partitioning on the Booking table based on the start_date column
 
 -- Step 1: Create partitioned table structure
