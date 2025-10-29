@@ -1,5 +1,6 @@
--- Write an initial query that retrieves all bookings along with the user details, property details, and payment details.
--- Assume the Booking table is large and query performance is slow. Implement partitioning on the Booking table based on the start_date column
+-- Partitioning Tables for Performance
+-- Assume the Booking table is large (eg 3M rows) and query performance is slow. 
+-- Implement partitioning on the Booking table based on the start_date column
 
 -- Step 1: Create partitioned table structure
 CREATE TABLE booking_partitioned (
@@ -64,7 +65,7 @@ CREATE INDEX idx_booking_partitioned_status ON booking_partitioned(status);
 CREATE INDEX idx_booking_partitioned_user_date ON booking_partitioned(user_id, start_date);
 CREATE INDEX idx_booking_partitioned_property_date ON booking_partitioned(property_id, start_date);
 
--- Step 4: Data migration from old table (run during maintenance window)
+-- Step 4: Data migration from old table to partitioned table(run during maintenance window)
 INSERT INTO booking_partitioned 
 SELECT * FROM booking;
 
