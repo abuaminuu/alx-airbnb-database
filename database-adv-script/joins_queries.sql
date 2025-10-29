@@ -1,5 +1,3 @@
--- sql queries
-
 -- Write a query using an INNER JOIN to retrieve all bookings and the respective users who made those bookings.
 SELECT * FROM Booking INNER JOIN User ON Booking.user_id = User.user_id LIMIT 10;
 
