@@ -1,9 +1,12 @@
+-- Identify high-usage columns in your User, Booking, and Property tables (e.g., columns used in WHERE, JOIN, ORDER BY clauses).
+-- and write SQL CREATE INDEX commands to create appropriate indexes for those columns.
+  
 -- User Table Indexes
 CREATE INDEX index_user_email ON "user"(email);
 CREATE INDEX index_user_role ON "user"(role);
 CREATE INDEX index_user_created_at ON "user"(created_at);
 
--- Booking Table Indexes  
+-- Booking Table Indexes
 CREATE INDEX index_booking_user_id ON booking(user_id);
 CREATE INDEX index_booking_property_id ON booking(property_id);
 CREATE INDEX index_booking_status ON booking(status);
