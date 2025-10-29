@@ -72,7 +72,7 @@ ORDER BY b.created_at DESC;
 4. **Inefficient Join Order**
    - Large tables joined before filtering
 
-## 💡 Optimization Recommendations
+## 💡 Optimization Recommendations (Refactoring)
 
 ### **Immediate Index Additions:**
 ```sql
