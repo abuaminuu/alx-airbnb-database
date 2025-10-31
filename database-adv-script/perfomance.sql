@@ -34,4 +34,8 @@ FROM booking b
 INNER JOIN "user" u ON b.user_id = u.user_id
 INNER JOIN property p ON b.property_id = p.property_id
 LEFT JOIN payment py ON b.booking_id = py.booking_id
+-- ✅ Added WHERE and AND for performance filtering
+WHERE b.status = 'confirmed'
+  AND p.location = 'Lagos'
+
 ORDER BY b.created_at DESC;
