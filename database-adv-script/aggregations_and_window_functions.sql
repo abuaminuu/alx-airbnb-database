@@ -5,4 +5,5 @@ SELECT user_id, COUNT(booking_id) FROM booking GROUP BY user_id;
 -- get prop and their total bookings
 SELECT property_id, COUNT(booking_id),
   RANK() OVER(ORDER BY COUNT(booking_id) DESC) as rank
+  ROW_NUMBER() OVER(ORDER BY COUNT(booking_id) DESC) as rank
   FROM booking GROUP BY property_id;
