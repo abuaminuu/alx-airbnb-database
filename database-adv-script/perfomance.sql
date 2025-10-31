@@ -1,5 +1,5 @@
 -- Write an initial query that retrieves all bookings along with the user details, property details, and payment details
-
+EXPLAIN ANALYZE
 SELECT 
     b.booking_id,
     b.start_date,
