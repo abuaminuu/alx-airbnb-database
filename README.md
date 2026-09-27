@@ -19,11 +19,13 @@ Together, these components provide a solid foundation for developers to build an
 - Clean, normalized schema structure  
 <!-- Automated UUID generation via `pgcrypto`  -->
 - Indexed relationships for performance  
-- Ready-to-run sample data  
+- Ready-to-run sample data
 
-<!--
+
 **Getting Started**
 ```bash
 psql -U <username> -d <database_name> -f schema.sql
 psql -U <username> -d <database_name> -f seed.sql
-->
+
+:)
+
